@@ -1,10 +1,13 @@
 {
-  "name": "generator-webapp",
-  "version": "4.0.0-2",
-  "description": "Scaffold out a front-end web app",
+  "name": "generator-uqdc",
+  "version": "0.1.0",
+  "description": "Scaffold out a UNIQLO front-end web app",
   "license": "BSD-2-Clause",
-  "repository": "yeoman/generator-webapp",
-  "author": "The Yeoman Team",
+  "repository": "yeoman/generator-uqdc",
+  "author": {
+    "name": "Ray Weitzenberg",
+    "email": "ray.weitzenberg@uniqlo-usa.com"
+  },
   "main": "app/index.js",
   "engines": {
     "node": ">=6"
@@ -38,6 +41,7 @@
     "eslint": "^5.10.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
+    "gulp-inject": "^5.0.2",
     "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "mocha": "^5.2.0",
