@@ -6,7 +6,7 @@ const del = require('del');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const { argv } = require('yargs');
-// const inject = require('gulp-inject');
+const inject = require('gulp-inject');
 
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
@@ -120,7 +120,10 @@ function measureSize() {
 
 
 
-
+// These two functions grab the HTML and CSS from their respective
+// working files then concatenates them into target.html. From there
+// you do the good ol' copy+paste copy+paste
+// 
 function injectCSS() {
   return src('./app/target.html')
   .pipe(inject(src(['./.tmp/styles/main.css']), {
@@ -146,9 +149,6 @@ function injectHTML() {
   }))
   .pipe(dest('./app'));
 }
-
-
-const inject = series(injectHTML, parallel(injectCSS));
 
 
 
@@ -242,6 +242,10 @@ if (isDev) {
   serve = series(build, startDistServer);
 }
 
+let injector;
+injector = series(injectCSS, injectHTML)
+
 exports.serve = serve;
 exports.build = build;
+exports.injector = injector;
 exports.default = build;

@@ -29,6 +29,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-eslint": "^5.0.0",
+    "gulp-inject": "^5.0.2",
     <% if (includeSass) { %>
     "gulp-filter": "^5.1.0",
     <% } %>

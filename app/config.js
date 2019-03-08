@@ -97,6 +97,14 @@ module.exports = {
     {
       input: 'index.html',
       output: 'app/index.html'
+    },
+    {
+      input: 'originalHtml.html',
+      output: 'app/originalHtml.html'
+    },
+    {
+      input: 'target.html',
+      output: 'app/target.html'
     }
   ]
 };
