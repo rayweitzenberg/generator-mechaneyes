@@ -6,6 +6,7 @@ const del = require('del');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const { argv } = require('yargs');
+// const inject = require('gulp-inject');
 
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
@@ -107,6 +108,60 @@ function measureSize() {
   return src('dist/**/*')
     .pipe($.size({title: 'build', gzip: true}));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function injectCSS() {
+  return src('./app/target.html')
+  .pipe(inject(src(['./.tmp/styles/main.css']), {
+      starttag: '/* inject:theCSS:css */',
+      endtag: '/* endCSSinject */',
+      transform: function(filePath, file) {
+          var theCss = file.contents.toString('utf8');
+          theCss = theCss.replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, '$1');
+          return theCss;
+      }
+  }))
+  .pipe(dest('./app'));
+}
+
+function injectHTML() {
+  return src('./app/target.html')
+  .pipe(inject(src(['./app/originalHtml.html']), {
+      starttag: '<!-- inject:theHTML:html -->',
+      endtag: '<!-- endHTMLinject -->',
+      transform: function(filePath, file) {
+          return file.contents.toString('utf8')
+      }
+  }))
+  .pipe(dest('./app'));
+}
+
+
+const inject = series(injectHTML, parallel(injectCSS));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const build = series(
   parallel(
