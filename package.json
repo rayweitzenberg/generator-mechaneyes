@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Scaffold out a UNIQLO front-end web app",
   "license": "BSD-2-Clause",
-  "repository": "yeoman/generator-uqdc",
+  "repository": "https://github.com/rayweitzenberg/generator-uqdc",
   "author": {
     "name": "Ray Weitzenberg",
     "email": "ray.weitzenberg@uniqlo-usa.com"
@@ -19,14 +19,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator",
-    "web",
-    "app",
-    "front-end",
-    "h5bp",
-    "modernizr",
-    "jquery",
-    "gulp"
+    "yeoman-generator"
   ],
   "dependencies": {
     "command-exists": "^1.2.8",
