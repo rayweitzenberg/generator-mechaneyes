@@ -38,12 +38,12 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
 
 
 ## Legacy Getting Started
-~~~Install~~~
+~~Install~~
 Haven't dug into all of these, so I'm not sure what carries over from the original generator.
-- ~~~Install~~~: `npm install --global yo gulp-cli generator-webapp`~~~
-- ~~~Run `yo webapp` to scaffold your webapp~~~
-- ~~~Run `npm start` to preview and watch for changes~~~
-- ~~~Run `npm start -- --port=8080` to preview and watch for changes in port `8080`~~~
+- ~~Install~~: `npm install --global yo gulp-cli generator-webapp`
+- ~~Run `yo webapp` to scaffold your webapp~~
+- ~~Run `npm start` to preview and watch for changes~~
+- ~~Run `npm start -- --port=8080` to preview and watch for changes in port `8080`~~
 - Run `npm install --save <package>` to install dependencies, frontend included
 - Run `npm run  serve:test` to run the tests in the browser
 - Run `npm run  serve:test -- --port=8085` to run the tests in the browser in port `8085`
