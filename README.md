@@ -2,6 +2,8 @@
 
 > [Yeoman](http://yeoman.io) generator that scaffolds out a front-end web app using [gulp](http://gulpjs.com/) for the build process
 
+> This generator is an extension from the [Web app generator](https://github.com/yeoman/generator-webapp) 
+
 ![](screenshot.png)
 
 ---
@@ -30,16 +32,17 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
   - clone or download repo
   - from local directory run `npm link`
     - this is temporary and will be fixed when generator is pushed to [Yeoman](http://yeoman.io)
-- Run `yo uqdc` to scaffold your webapp
+  - Run `yo uqdc` to scaffold your webapp
 - Run `gulp start` to preview and watch for changes
-- Run `gulp injector` to assemble content from `originalHTML.html` and `main.css`
+- Run `gulp injector` to assemble content from `originalHTML.html` and `main.css`. The content will be outputted to `target.html`. Fro there it's easy to copy and upload into Business Manager.
 
 
 ## Legacy Getting Started
-- Install: `npm install --global yo gulp-cli generator-webapp`
-- Run `yo webapp` to scaffold your webapp
-- Run `npm start` to preview and watch for changes
-- Run `npm start -- --port=8080` to preview and watch for changes in port `8080`
+Haven't dug into all of these, so I'm not sure what carries over from the original generator.
+- ~~~Install: `npm install --global yo gulp-cli generator-webapp`~~~
+- ~~~Run `yo webapp` to scaffold your webapp~~~
+- ~~~Run `npm start` to preview and watch for changes~~~
+- ~~~Run `npm start -- --port=8080` to preview and watch for changes in port `8080`~~~
 - Run `npm install --save <package>` to install dependencies, frontend included
 - Run `npm run  serve:test` to run the tests in the browser
 - Run `npm run  serve:test -- --port=8085` to run the tests in the browser in port `8085`
@@ -65,10 +68,6 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
 - `--test-framework=<framework>`
   Either `mocha` or `jasmine`. Defaults to `mocha`.
 
-
-## Contribute
-
-See the [contributing docs](contributing.md).
 
 ## License
 
