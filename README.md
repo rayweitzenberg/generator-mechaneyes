@@ -38,6 +38,7 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
 
 
 ## Legacy Getting Started
+~~~Install~~~
 Haven't dug into all of these, so I'm not sure what carries over from the original generator.
 - ~~~Install: `npm install --global yo gulp-cli generator-webapp`~~~
 - ~~~Run `yo webapp` to scaffold your webapp~~~
