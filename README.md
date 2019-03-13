@@ -29,6 +29,10 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
   - Assuming you're setup with Yeoman ...
   - clone or download repo
   - from local directory run `npm link`
+    - this is temporary and will be fixed when generator is pushed to [Yeoman](http://yeoman.io)
+- Run `yo uqdc` to scaffold your webapp
+- Run `gulp start` to preview and watch for changes
+- Run `gulp injector` to assemble content from `originalHTML.html` and `main.css`
 
 
 ## Legacy Getting Started
