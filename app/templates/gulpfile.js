@@ -6,7 +6,7 @@ const del = require('del');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const { argv } = require('yargs');
-const inject = require('gulp-inject');
+const injector = require('gulp-inject');
 
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
@@ -126,7 +126,7 @@ function measureSize() {
 // 
 function injectCSS() {
   return src('./app/target.html')
-  .pipe(inject(src(['./.tmp/styles/main.css']), {
+  .pipe(injector(src(['./.tmp/styles/main.css']), {
       starttag: '/* inject:theCSS:css */',
       endtag: '/* endCSSinject */',
       transform: function(filePath, file) {
@@ -140,7 +140,7 @@ function injectCSS() {
 
 function injectHTML() {
   return src('./app/target.html')
-  .pipe(inject(src(['./app/originalHtml.html']), {
+  .pipe(injector(src(['./app/originalHtml.html']), {
       starttag: '<!-- inject:theHTML:html -->',
       endtag: '<!-- endHTMLinject -->',
       transform: function(filePath, file) {
@@ -242,10 +242,10 @@ if (isDev) {
   serve = series(build, startDistServer);
 }
 
-let injector;
-injector = series(injectCSS, injectHTML)
+let inject;
+inject = series(injectCSS, injectHTML)
 
 exports.serve = serve;
 exports.build = build;
-exports.injector = injector;
+exports.inject = inject;
 exports.default = build;
