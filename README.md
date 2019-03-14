@@ -4,7 +4,8 @@
 
 > This generator is an extension from the [Web app generator](https://github.com/yeoman/generator-webapp) 
 
-![](nyc.jpg)
+<!-- ![](nyc.jpg) -->
+![](https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80)
 
 ---
 
