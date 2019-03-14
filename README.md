@@ -4,7 +4,7 @@
 
 > This generator is an extension from the [Web app generator](https://github.com/yeoman/generator-webapp) 
 
-![](screenshot.png)
+![](nyc.jpg)
 
 ---
 
@@ -19,7 +19,6 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
 * Automagically compile Sass with [libsass](http://libsass.org)
 * Automagically lint your scripts
 * Map compiled CSS to source stylesheets with source maps
-* Awesome image optimization
 
 *For more information on what this generator can do for you, take a look at the [gulp plugins](app/templates/_package.json) used in our `package.json`.*
 
@@ -27,23 +26,34 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
 
 ## Getting Started
 
-Install [Yeoman](http://yeoman.io) 
+Install Yeoman:
 ```sh
-`npm install -g yo`
+npm install -g yo
 ```
 
-Install the UQUSDC generator
+Install the UQUSDC generator:
 ```sh
-`npm install -g generator-uqusdc`
+npm install -g generator-uqusdc
 ```
 
 Change to your working directory and run:
 ```sh
-`yo uqusdc`
+yo uqusdc
 ```
 
-- Run `gulp serve` to preview and watch for changes
-- Run `gulp inject` to assemble content from `originalHTML.html` and `main.css`. The content will be outputted to `target.html`. From there it's easy to copy and upload into Business Manager.
+Run `gulp serve` to preview and watch for changes
+
+Run `gulp inject` to package your code for sending to Business Manager
+
+
+## Using Gulp Inject
+
+In order to assemble the code your working on, edit your SASS file(s) as usual, and put all of your working HTML in the `originalHTML.html` file. A bit of jQuery injects content from originalHTML.html into index.html for rendering in the browser. This keeps that HTML clean and portable.
+
+Running `gulp inject` will collate data from `originalHTML.html` and `.tmp/styles/main.css`, and will output that data to `target.html`. From there it's easy to copy and paste into content assets or slot configs in Business Manager.
+
+Backstory: Saving your SASS files will automatically put rendered CSS in the .tmp/styles/main.css file for displaying in the browser. The source map in this file is out of control, so the "gulp inject" function strips it out before it's sent to target.html.
+
 
 
 ## Legacy Getting Started
