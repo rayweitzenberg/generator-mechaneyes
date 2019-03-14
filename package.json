@@ -1,9 +1,9 @@
 {
-  "name": "generator-uqdc",
+  "name": "generator-uqusdc",
   "version": "0.5.0",
-  "description": "Scaffold out a UNIQLO centric front-end web app",
+  "description": "Scaffold out a UNIQLO USA centric front-end web app",
   "license": "BSD-2-Clause",
-  "repository": "https://github.com/uqdc/generator-uqdc",
+  "repository": "https://github.com/uqdc/generator-uqusdc",
   "author": "UNIQLO USA Digital Commerce",
   "main": "app/index.js",
   "engines": {
