@@ -1,4 +1,4 @@
-# Web app generator for UNIQLO frontend projects
+# Web app generator for UNIQLO USA frontend projects
 
 > [Yeoman](http://yeoman.io) generator that scaffolds out a front-end web app using [gulp](http://gulpjs.com/) for the build process
 
