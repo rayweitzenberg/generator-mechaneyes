@@ -28,13 +28,14 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
 ## Getting Started
 
 - Install:
-  - Assuming you're setup with Yeoman ...
-  - clone or download repo
-  - from local directory run `npm link`
-    - this is temporary and will be fixed when generator is pushed to [Yeoman](http://yeoman.io)
+  - Install [Yeoman](http://yeoman.io) `npm install -g yo`
+  - Clone or download repo
+  - From local repo directory run `npm link`
+    - This is temporary and will be fixed when generator is pushed to Yeoman
+  - Change to or create a directory where you'd like to work.
   - Run `yo uqdc` to scaffold your webapp
-- Run `gulp start` to preview and watch for changes
-- Run `gulp injector` to assemble content from `originalHTML.html` and `main.css`. The content will be outputted to `target.html`. Fro there it's easy to copy and upload into Business Manager.
+- Run `gulp serve` to preview and watch for changes
+- Run `gulp inject` to assemble content from `originalHTML.html` and `main.css`. The content will be outputted to `target.html`. From there it's easy to copy and upload into Business Manager.
 
 
 ## Legacy Getting Started
@@ -52,10 +53,10 @@ Haven't dug into all of these, so I'm not sure what carries over from the origin
 - Run `npm run serve:dist -- --port=5000` to preview the production build in port `5000`
 
 
-## Docs
+<!-- ## Docs
 
 * [getting started](docs/README.md) with this generator
-* [recipes](docs/recipes/README.md) for integrating other popular technologies like CoffeeScript
+* [recipes](docs/recipes/README.md) for integrating other popular technologies like CoffeeScript -->
 
 
 ## Options
