@@ -27,13 +27,21 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
 
 ## Getting Started
 
-- Install:
-  - Install [Yeoman](http://yeoman.io) `npm install -g yo`
-  - Clone or download repo
-  - From local repo directory run `npm link`
-    - This is temporary and will be fixed when generator is pushed to the npmjs.org repository ... pending
-  - Change to or create a directory where you'd like to work.
-  - Run `yo uqdc` to scaffold your webapp
+Install [Yeoman](http://yeoman.io) 
+```sh
+`npm install -g yo`
+```
+
+Install the UQUSDC generator
+```sh
+`npm install -g generator-uqusdc`
+```
+
+Change to your working directory and run:
+```sh
+`yo uqusdc`
+```
+
 - Run `gulp serve` to preview and watch for changes
 - Run `gulp inject` to assemble content from `originalHTML.html` and `main.css`. The content will be outputted to `target.html`. From there it's easy to copy and upload into Business Manager.
 
