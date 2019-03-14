@@ -31,7 +31,7 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
   - Install [Yeoman](http://yeoman.io) `npm install -g yo`
   - Clone or download repo
   - From local repo directory run `npm link`
-    - This is temporary and will be fixed when generator is pushed to Yeoman
+    - This is temporary and will be fixed when generator is pushed to the npmjs.org repository ... pending
   - Change to or create a directory where you'd like to work.
   - Run `yo uqdc` to scaffold your webapp
 - Run `gulp serve` to preview and watch for changes
