@@ -1,9 +1,20 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+$fontFam_uqReg: UniqloProRegular,
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+
+$fontFam_uqBold: UniqloProBold,
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+
+$fontFam_hel: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+
 <% if (includeBootstrap) { %>
 /* Space out content a bit */
 body {
