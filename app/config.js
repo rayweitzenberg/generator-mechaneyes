@@ -7,11 +7,6 @@ module.exports = {
     'skip-install-message': {
       desc: 'Skips the message after the installation of dependencies',
       type: Boolean
-    },
-    'test-framework': {
-      desc: 'Test framework to be invoked',
-      type: String,
-      defaults: 'mocha'
     }
   },
   prompts: [
@@ -28,11 +23,6 @@ module.exports = {
         {
           name: 'Bootstrap',
           value: 'includeBootstrap',
-          checked: true
-        },
-        {
-          name: 'Modernizr',
-          value: 'includeModernizr',
           checked: true
         },
         {

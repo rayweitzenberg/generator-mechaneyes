@@ -1,6 +1,6 @@
 {
   "name": "generator-uqusdc",
-  "version": "0.5.9",
+  "version": "0.6.0",
   "description": "Scaffold out a UNIQLO USA centric front-end web app",
   "license": "BSD-2-Clause",
   "repository": "https://github.com/uqdc/generator-uqusdc",
@@ -8,9 +8,6 @@
   "main": "app/index.js",
   "engines": {
     "node": ">=6"
-  },
-  "scripts": {
-    "test": "eslint . && mocha --reporter spec --timeout 3000"
   },
   "files": [
     "app"
@@ -20,8 +17,6 @@
   ],
   "dependencies": {
     "command-exists": "^1.2.8",
-    "generator-jasmine": "^2.0.1",
-    "generator-mocha": "^2.0.1",
     "mkdirp": "^0.5.1",
     "yeoman-generator": "^3.1.1",
     "yosay": "^2.0.2"
@@ -34,7 +29,7 @@
     "gulp-inject": "^5.0.2",
     "husky": "^2.1.0",
     "lint-staged": "^8.1.5",
-    "mocha": "^5.2.0",
+    "mocha": "^6.1.4",
     "prettier": "^1.15.3",
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.6.0"

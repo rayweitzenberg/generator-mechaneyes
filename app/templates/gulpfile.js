@@ -14,8 +14,8 @@ const server = browserSync.create();
 const port = argv.port || 9000;
 
 const isProd = process.env.NODE_ENV === 'production';
-const isTest = process.env.NODE_ENV === 'test';
-const isDev = !isProd && !isTest;
+// const isTest = process.env.NODE_ENV === 'test';
+const isDev = !isProd;
 
 function styles() {<% if (includeSass) { %>
   return src('app/styles/*.scss')
@@ -201,24 +201,24 @@ function startAppServer() {
   watch('app/fonts/**/*', fonts);
 }
 
-function startTestServer() {
-  server.init({
-    notify: false,
-    port,
-    ui: false,
-    server: {
-      baseDir: 'test',
-      routes: {
-        '/scripts': '.tmp/scripts',
-        '/node_modules': 'node_modules'
-      }
-    }
-  });
+// function startTestServer() {
+//   server.init({
+//     notify: false,
+//     port,
+//     ui: false,
+//     server: {
+//       baseDir: 'test',
+//       routes: {
+//         '/scripts': '.tmp/scripts',
+//         '/node_modules': 'node_modules'
+//       }
+//     }
+//   });
 
-  watch('app/scripts/**/*.js', scripts);
-  watch(['test/spec/**/*.js', 'test/index.html']).on('change', server.reload);
-  watch('test/spec/**/*.js', lintTest);
-}
+//   watch('app/scripts/**/*.js', scripts);
+//   watch(['test/spec/**/*.js', 'test/index.html']).on('change', server.reload);
+//   watch('test/spec/**/*.js', lintTest);
+// }
 
 function startDistServer() {
   server.init({
@@ -236,8 +236,8 @@ function startDistServer() {
 let serve;
 if (isDev) {
   serve = series(clean, parallel(styles, scripts, fonts), startAppServer);
-} else if (isTest) {
-  serve = series(scripts, startTestServer);
+// } else if (isTest) {
+//   serve = series(scripts, startTestServer);
 } else if (isProd) {
   serve = series(build, startDistServer);
 }

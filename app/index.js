@@ -15,14 +15,6 @@ module.exports = class extends Generator {
 
   initializing() {
     this.pkg = require('../package.json');
-    this.composeWith(
-      require.resolve(
-        `generator-${this.options['test-framework']}/generators/app`
-      ),
-      {
-        'skip-install': this.options['skip-install']
-      }
-    );
   }
 
   prompting() {
@@ -42,7 +34,6 @@ module.exports = class extends Generator {
       // we change a bit this way of doing to automatically do this in the self.prompt() method.
       this.includeSass = hasFeature('includeSass');
       this.includeBootstrap = hasFeature('includeBootstrap');
-      this.includeModernizr = hasFeature('includeModernizr');
       this.includeAnalytics = hasFeature('includeAnalytics');
       this.includeJQuery = answers.includeJQuery;
     });
@@ -56,9 +47,7 @@ module.exports = class extends Generator {
       version: this.pkg.version,
       includeSass: this.includeSass,
       includeBootstrap: this.includeBootstrap,
-      testFramework: this.options['test-framework'],
       includeJQuery: this.includeJQuery,
-      includeModernizr: this.includeModernizr,
       includeAnalytics: this.includeAnalytics
     };
 
@@ -88,10 +77,6 @@ module.exports = class extends Generator {
     config.dirsToCreate.forEach(item => {
       mkdirp(item);
     });
-
-    if (this.includeModernizr) {
-      copy('modernizr.json', 'modernizr.json');
-    }
 
     let cssFile = `main.${this.includeSass ? 'scss' : 'css'}`;
     copyTpl(cssFile, `app/styles/${cssFile}`, templateData);

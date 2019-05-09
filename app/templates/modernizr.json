@@ -1,7 +1,6 @@
 {
   "classPrefix": "modernizr-",
   "options": [
-    "addTest",
     "atRule",
     "domPrefixes",
     "hasEvent",
@@ -12,10 +11,7 @@
     "prefixed",
     "prefixes",
     "prefixedCSS",
-    "setClasses",
-    "testAllProps",
-    "testProp",
-    "testStyles"
+    "setClasses"
   ],
   "feature-detects": [
     "css/supports",

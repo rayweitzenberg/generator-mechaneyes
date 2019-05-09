@@ -4,7 +4,6 @@ Description:
 Options:
     Sass: Include Sass
     Bootstrap: Include Bootstrap or Bootstrap Sass if Sass is included
-    Modernizr: Include Modernizr
     Babel: Use ES2015 features by using Babel
 
 Example:
@@ -15,4 +14,3 @@ Example:
         package.json: Development packages installed by npm.
 
         app/: Your application files.
-        test/: Unit tests for your application.
