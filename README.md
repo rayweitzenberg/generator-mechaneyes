@@ -69,7 +69,7 @@ The uncommented HTML element structure is setup to present your content for a _f
 
 The commented out version directly below will display your content _with a sidebar_.
 
-With the sidebar version, your content is injected into the container wrapped in the same HTML element structure used when displaying on a uniqlo.com page that has a sidebar. This structure matches the site so your styling isn't busted once your content is inserted into the CMS.
+Your content is injected into the container wrapped in the same HTML element structure used when displaying on a uniqlo.com page. This structure matches the site so your styling isn't busted once your content is inserted into the CMS.
 
 ```
 <!-- ————————————————————————————————————o————————————————————————————————————o FULL WIDTH -->
