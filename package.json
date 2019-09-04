@@ -1,6 +1,6 @@
 {
   "name": "generator-uqusdc",
-  "version": "0.6.7",
+  "version": "0.7.0",
   "description": "Scaffold out a UNIQLO USA centric front-end web app",
   "license": "BSD-2-Clause",
   "repository": "https://github.com/uqdc/generator-uqusdc",
@@ -30,6 +30,7 @@
     "gulp-inject": "^5.0.2",
     "husky": "^2.1.0",
     "lint-staged": "^8.1.5",
+    "gulp-minify-inline": "^1.1.0",
     "prettier": "^1.15.3",
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.6.0"
