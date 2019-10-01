@@ -169,7 +169,7 @@ function injectCSS() {
                 return theCss;
             }
         }))
-        .pipe(dest('./dist'));
+        .pipe(dest('./app'));
 }
 
 function injectHTML() {
@@ -181,23 +181,7 @@ function injectHTML() {
                 return file.contents.toString('utf8')
             }
         }))
-        .pipe($.if(/\.html$/, $.htmlmin({
-            collapseWhitespace: true,
-            minifyCSS: true,
-            minifyJS: {
-                compress: {
-                    drop_console: true
-                }
-            },
-            // minifyJS: true,
-            processConditionalComments: true,
-            removeComments: true,
-            removeEmptyAttributes: true,
-            removeScriptTypeAttributes: true,
-            removeStyleLinkTypeAttributes: true
-        })))
-        .pipe(minifyInline())
-        .pipe(dest('./dist'));
+        .pipe(dest('./app'));
 }
 
 
