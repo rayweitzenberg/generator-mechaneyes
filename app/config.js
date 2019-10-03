@@ -97,8 +97,8 @@ module.exports = {
 			output: 'app/originalHtml.html'
 		},
 		{
-			input: 'target.html',
-			output: 'app/target.html'
+			input: 'assembled.html',
+			output: 'app/assembled.html'
 		}
 	]
 };

@@ -15,8 +15,9 @@ const cssnano = require('cssnano');
 const {
     argv
 } = require('yargs');
+const htmlmin = require('gulp-htmlmin');
 const injector = require('gulp-inject');
-const minifyInline = require('gulp-minify-inline');
+const rename = require("gulp-rename");
 
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
@@ -24,7 +25,6 @@ const server = browserSync.create();
 const port = argv.port || 9000;
 
 const isProd = process.env.NODE_ENV === 'production';
-// const isTest = process.env.NODE_ENV === 'test';
 const isDev = !isProd;
 
 function styles() {
@@ -81,34 +81,6 @@ function lintTest() {
         .pipe(dest('test/spec'));
 };
 
-function html() {
-    return src('app/*.html')
-        .pipe($.useref({
-            searchPath: ['.tmp', 'app', '.']
-        }))
-        .pipe($.if(/\.js$/, $.uglify({
-            compress: {
-                drop_console: true
-            }
-        })))
-        .pipe($.if(/\.css$/, $.postcss([cssnano({
-            safe: true,
-            autoprefixer: false
-        })])))
-        .pipe($.if(/\.html$/, $.htmlmin({
-            collapseWhitespace: true,
-            minifyCSS: true,
-            // minifyJS: {compress: {drop_console: true}},
-            minifyJS: true,
-            processConditionalComments: true,
-            removeComments: true,
-            removeEmptyAttributes: true,
-            removeScriptTypeAttributes: true,
-            removeStyleLinkTypeAttributes: true
-        })))
-        .pipe(dest('dist'));
-}
-
 function images() {
     return src('app/images/**/*', {
             since: lastRun(images)
@@ -132,7 +104,8 @@ function extras() {
 };
 
 function clean() {
-    return del(['.tmp', 'dist'])
+    // return del(['.tmp', 'dist'])
+    return del('.tmp')
 }
 
 function measureSize() {
@@ -155,11 +128,13 @@ function measureSize() {
 
 
 // These two functions grab the HTML and CSS from their respective
-// working files then concatenates them into target.html. From there
-// you do the good ol' copy+paste copy+paste
+// working files then concatenates them into assembled.html.
+// 
+// Now minifies styling and markup, placing it in dist/compressed.html
+// From there you do the good ol' copy+paste copy+paste
 // 
 function injectCSS() {
-    return src('./app/target.html')
+    return src('./app/assembled.html')
         .pipe(injector(src(['./.tmp/styles/main.css']), {
             starttag: '/* inject:theCSS:css */',
             endtag: '/* endCSSinject */',
@@ -173,7 +148,7 @@ function injectCSS() {
 }
 
 function injectHTML() {
-    return src('./app/target.html')
+    return src('./app/assembled.html')
         .pipe(injector(src(['./app/originalHtml.html']), {
             starttag: '<!-- inject:theHTML:html -->',
             endtag: '<!-- endHTMLinject -->',
@@ -181,11 +156,20 @@ function injectHTML() {
                 return file.contents.toString('utf8')
             }
         }))
-        .pipe(dest('./app'));
+        .pipe(dest('./app'))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            minifyCSS: true,
+            minifyJS: true,
+            processConditionalComments: true,
+            removeComments: true,
+            removeEmptyAttributes: true,
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+        }))
+        .pipe(rename('compressed.html'))
+        .pipe(dest('./dist'));
 }
-
-
-
 
 
 
@@ -200,7 +184,7 @@ function injectHTML() {
 const build = series(
     parallel(
         lint,
-        series(parallel(styles, scripts), html),
+        series(parallel(styles, scripts)),
         images,
         fonts,
         extras
@@ -273,7 +257,7 @@ if (isDev) {
 }
 
 let inject = series(injectCSS, injectHTML)
-// inject = series(parallel(injectCSS, injectHTML), html),
+// let inject = series(injectCSS, injectHTML, minit)
 
 exports.serve = serve;
 exports.build = build;
