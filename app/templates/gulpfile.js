@@ -209,7 +209,7 @@ function startAppServer() {
 		series(injectCSS, injectHTML, server.reload)
 	);
 
-    watch('app/styles/**/*.scss', styles);
+    watch('app/styles/**/*.scss', series(styles, injectCSS, injectHTML));
     watch('app/scripts/**/*.js', scripts);
     watch('app/fonts/**/*', fonts);
 }
