@@ -204,35 +204,15 @@ function startAppServer() {
         }
     });
 
-    watch([
-        'app/*.html',
-        'app/images/**/*',
-        '.tmp/fonts/**/*'
-    ]).on('change', server.reload);
+    watch(['app/originalHtml.html', 'app/images/**/*', '.tmp/fonts/**/*']).on(
+		'change',
+		series(injectCSS, injectHTML, server.reload)
+	);
 
     watch('app/styles/**/*.scss', styles);
     watch('app/scripts/**/*.js', scripts);
     watch('app/fonts/**/*', fonts);
 }
-
-// function startTestServer() {
-//   server.init({
-//     notify: false,
-//     port,
-//     ui: false,
-//     server: {
-//       baseDir: 'test',
-//       routes: {
-//         '/scripts': '.tmp/scripts',
-//         '/node_modules': 'node_modules'
-//       }
-//     }
-//   });
-
-//   watch('app/scripts/**/*.js', scripts);
-//   watch(['test/spec/**/*.js', 'test/index.html']).on('change', server.reload);
-//   watch('test/spec/**/*.js', lintTest);
-// }
 
 function startDistServer() {
     server.init({
@@ -250,14 +230,11 @@ function startDistServer() {
 let serve;
 if (isDev) {
     serve = series(clean, parallel(styles, scripts, fonts), startAppServer);
-    // } else if (isTest) {
-    //   serve = series(scripts, startTestServer);
 } else if (isProd) {
     serve = series(build, startDistServer);
 }
 
 let inject = series(injectCSS, injectHTML)
-// let inject = series(injectCSS, injectHTML, minit)
 
 exports.serve = serve;
 exports.build = build;

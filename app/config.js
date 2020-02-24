@@ -85,6 +85,10 @@ module.exports = {
 			output: 'package.json'
 		},
 		{
+			input: 'README.md',
+			output: 'README.md'
+		},
+		{
 			input: 'main.js',
 			output: 'app/scripts/main.js'
 		},
