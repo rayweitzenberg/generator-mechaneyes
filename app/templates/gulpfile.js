@@ -204,10 +204,12 @@ function startAppServer() {
         }
     });
 
-    watch(['app/originalHtml.html', 'app/images/**/*', '.tmp/fonts/**/*']).on(
-		'change',
-		series(injectCSS, injectHTML, server.reload)
-	);
+    watch([
+		'app/**.html',
+		'!app/assembled.html',
+		'app/images/**/*',
+		'.tmp/fonts/**/*'
+	]).on('change', series(injectCSS, injectHTML, server.reload));
 
     watch('app/styles/**/*.scss', series(styles, injectCSS, injectHTML));
     watch('app/scripts/**/*.js', scripts);
