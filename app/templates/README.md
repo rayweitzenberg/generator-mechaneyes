@@ -2,7 +2,7 @@
 
 
 
-### Description
+# Description
 Describes the project. This is a project featuring a quick brown fox jumping over a lazy dog.
 
 
@@ -18,14 +18,14 @@ Describes the project. This is a project featuring a quick brown fox jumping ove
 
 
 
-# Notes
+# Notes on the Readme Elements Above
 
-### Example Types
+### Examples of Types
 
 - Feature Page  
 - Banner
-  - L3
-  - PDP
+   - L3
+   - PDP
 - Custom Feature  
 - Template  
 - Content Header
