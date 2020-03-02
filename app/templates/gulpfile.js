@@ -183,7 +183,7 @@ function startAppServer() {
 
 	watch([
 		'app/*.html',
-		// '!app/assembled.html',
+		'!app/assembled.html',
 		'app/images/**/*',
 		'.tmp/fonts/**/*'
 	]).on('change', series(injectCSS, injectHTML, server.reload));
