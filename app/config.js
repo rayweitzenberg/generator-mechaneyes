@@ -93,6 +93,10 @@ module.exports = {
 			output: 'app/scripts/main.js'
 		},
 		{
+			input: 'main.scss',
+			output: 'app/styles/main.scss'
+		},
+		{
 			input: 'index.html',
 			output: 'app/index.html'
 		},
