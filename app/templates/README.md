@@ -19,7 +19,7 @@ Describes the project. This is a project featuring a quick brown fox jumping ove
 
 
 # Notes on the Readme Elements Above
-
+### *You can delete this section in your actual readme*
 
 ### Image of Main
 The image you include up top is typically a portion of the layout defined by the design team. This is included simply to give a quick hint as to what this project is.
