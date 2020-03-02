@@ -3,7 +3,7 @@
 
 
 ### Description
-Describes the project. This is a project featuring a quick brown fox jumping over a lazy dog
+Describes the project. This is a project featuring a quick brown fox jumping over a lazy dog.
 
 
 
@@ -17,7 +17,10 @@ Describes the project. This is a project featuring a quick brown fox jumping ove
 
 
 
-# Example Types
+
+# Notes
+
+## Example Types
 
 - Feature Page  
 - Banner
@@ -27,10 +30,6 @@ Describes the project. This is a project featuring a quick brown fox jumping ove
 - Template  
 - Content Header
 
-
-
-# Notes
-
-Main image is typically a portion of the layout defined by the design team. Included simply to give a quick idea as to what this project centers upon.
+**Image of Main** is typically a portion of the layout defined by the design team. Included simply to give a quick idea as to what this project centers upon.
 
 For the sake of formatting, lists need to include two spaces at the ends of lines to force line breaks.
