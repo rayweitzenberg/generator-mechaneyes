@@ -20,16 +20,21 @@ Describes the project. This is a project featuring a quick brown fox jumping ove
 
 # Notes on the Readme Elements Above
 
+
+### Image of Main
+The image you include up top is typically a portion of the layout defined by the design team. This is included simply to give a quick hint as to what this project is.
+
+
 ### Examples of Types
 
 - Feature Page  
 - Banner
-   - L3
-   - PDP
+    - L3
+    - PDP
 - Custom Feature  
 - Template  
 - Content Header
 
-**Image of Main** up top is typically a portion of the layout defined by the design team. Included simply to give a quick idea as to what this project centers upon.
 
-For the sake of formatting, lists need to include two spaces at the ends of lines to force line breaks.
+### Formatting Lists
+Custom lists — like project deets above — need to include two spaces at the ends of lines to force line breaks.
