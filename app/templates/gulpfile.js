@@ -186,7 +186,7 @@ function startAppServer() {
 		'!app/assembled.html',
 		'app/images/**/*',
 		'.tmp/fonts/**/*'
-	]).on('change', series(injectCSS, injectHTML, server.reload));
+	]).on('change', series(injectHTML, server.reload));
 	watch('app/styles/**/*.scss', series(styles, injectCSS));
 	watch('app/scripts/**/*.js', scripts);
 	watch('app/fonts/**/*', fonts);
