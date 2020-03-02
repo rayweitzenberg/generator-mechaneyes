@@ -20,7 +20,7 @@ Describes the project. This is a project featuring a quick brown fox jumping ove
 
 # Notes
 
-## Example Types
+### Example Types
 
 - Feature Page  
 - Banner
@@ -30,6 +30,6 @@ Describes the project. This is a project featuring a quick brown fox jumping ove
 - Template  
 - Content Header
 
-**Image of Main** is typically a portion of the layout defined by the design team. Included simply to give a quick idea as to what this project centers upon.
+**Image of Main** up top is typically a portion of the layout defined by the design team. Included simply to give a quick idea as to what this project centers upon.
 
 For the sake of formatting, lists need to include two spaces at the ends of lines to force line breaks.
