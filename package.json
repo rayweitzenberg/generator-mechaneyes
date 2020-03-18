@@ -1,10 +1,10 @@
 {
   "name": "generator-uqusdc",
-  "version": "0.9.1",
-  "description": "Scaffold out a UNIQLO USA centric front-end web app",
+  "version": "0.9.3",
+  "description": "Scaffold out a front-end web app custom for RT projects",
   "license": "BSD-2-Clause",
-  "repository": "https://github.com/uqdc/generator-uqusdc",
-  "author": "Ray Weitzenberg @ UNIQLO USA Digital Commerce (https://www.uniqlo.com/us/en/home/)",
+  "repository": "https://github.com/rayweitzenberg/generator-uqusdc",
+  "author": "Ray Weitzenberg (https://github.com/rayweitzenberg/)",
   "main": "app/index.js",
   "engines": {
     "node": ">=6"
