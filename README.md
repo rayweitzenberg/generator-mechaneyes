@@ -1,4 +1,5 @@
-# Web app generator for frontend projects
+[<img src="https://source.unsplash.com/random/1280x300">](unsplash/random)
+# Web app generator for UNIQLO frontend projects
 
 > [Yeoman](http://yeoman.io) generator that scaffolds out a front-end web app using [gulp](http://gulpjs.com/) for the build process
 
@@ -7,9 +8,9 @@
 ---
 
 ## This Generator's Purpose in Life
-The main reason for extending into this generator is for packaging up JS+HTML+CSS to be deployed in some of our projects. Due to the build process we use, behavior+structure+presentation needs to be assembled in the way this generator does before being deployed.
+The main reason for extending into this generator is for packaging up JS+HTML+CSS to be deployed in our projects. Due to the build process we use, behavior, structure and presentation needs to be assembled in this way before being deployed.
 
-The generator takes the relevant code and cleanly dumps it into a place we can easily pull from. It sidesteps all the typical markup in an HTML page, and just grabs the relevant content.
+The generator takes the relevant code and cleanly dumps it into a place we can easily pull from. It sidesteps a lot of the typical markup in an HTML page, and just grabs the relevant content.
 
 It pulls from `originalHtml.html` as well as `.tmp/styles/main.css` and dumps this into `assembled.html`. You're left with one clean and portable file to use.
 
@@ -43,7 +44,9 @@ _For more information on what this generator can do for you, take a look at the 
 
 ## Getting Started
 
-- Install: `npm install --global yo gulp-cli generator-uqusdc`
+- Install Yeoman: `npm install --g yo`
+
+- Install Generator: `npm install -g generator-uqusdc`
 
 * Run `yo uqusdc` to scaffold your webapp
 

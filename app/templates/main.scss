@@ -18,6 +18,7 @@ sans-serif;
 
 
 @import 'breakpoints';
+@import 'styles';
 
 
 // FULL WIDTH SPECIFICITY
@@ -27,9 +28,9 @@ sans-serif;
 }
 
 
-// // SIDEBARRED SPECIFICITY
-// // 
-// .pt_product-search-result #main .primary-content {
+// SIDEBARRED SPECIFICITY
+// 
+.pt_product-search-result #main .primary-content {
 
-// }
+}
 

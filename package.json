@@ -1,7 +1,7 @@
 {
   "name": "generator-uqusdc",
-  "version": "0.9.3",
-  "description": "Scaffold out a front-end web app custom for RT projects",
+  "version": "1.0.0",
+  "description": "Scaffold out a front-end web app custom built for UQ projects",
   "license": "BSD-2-Clause",
   "repository": "https://github.com/rayweitzenberg/generator-uqusdc",
   "author": "Ray Weitzenberg (https://github.com/rayweitzenberg/)",

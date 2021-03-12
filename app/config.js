@@ -73,6 +73,10 @@ module.exports = {
 		{
 			input: '_breakpoints.scss',
 			output: 'app/styles/_breakpoints.scss'
+		},
+		{
+			input: '_styles.scss',
+			output: 'app/styles/_styles.scss'
 		}
 	],
 	filesToRender: [

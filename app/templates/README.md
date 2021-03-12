@@ -1,4 +1,4 @@
-![Image of Main](main.png)
+![Screenshot from Project](screenshot.png)
 
 
 
@@ -10,9 +10,9 @@ Describes the project. This is a project featuring a quick brown fox jumping ove
 # Project Deets
 
 **Project Owner**: Yabe  
-**Developer**: Tiffany  
-**Date Launch**: 02/20/20  
-**Season**: 20SS  
+**Developer**: Mohammed  
+**Date Launch**: 12/21/21  
+**Season**: 21SS  
 **Type**: Feature Page  
 
 

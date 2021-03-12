@@ -1,0 +1,662 @@
+:root {
+    --helvetica: Helvetica Neue, Helvatica, Arial;
+    --uniqloProReg: Uniqlo Pro Regular, uniqloproregular, Helvetica Neue, Helvatica, Arial;
+    --uniqloProBold: Uniqlo Pro Bold, uniqloRegbold, Helvetica Neue, Helvatica, Arial
+}
+
+
+.Title-1 {
+    font-weight: 300;
+    line-height: 1.04;
+    letter-spacing: .5px
+}
+
+.Title-1,
+.Title-3 {
+    font-family: "Uniqlo Pro Regular", "uniqloproregular", "Helvetica Neue", Helvatica, Arial;
+    font-size: 50px;
+    font-stretch: normal;
+    font-style: normal;
+    color: #0d0d0d
+}
+
+.Title-3 {
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 1.5px
+}
+
+.Title-2 {
+    font-family: "Helvetica Neue", Helvatica, Arial;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: normal;
+    color: #0d0d0d
+}
+
+.Header-1,
+.Title-2,
+h1 {
+    font-stretch: normal;
+    font-style: normal
+}
+
+.Header-1,
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.17
+}
+
+.Header-1,
+.Header-3,
+h1,
+h2 {
+    font-family: "Uniqlo Pro Regular", "uniqloproregular", "Helvetica Neue", Helvatica, Arial;
+    letter-spacing: .5px;
+    color: var(--black)
+}
+
+.Header-3,
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36
+}
+
+.Header-2,
+h3 {
+    font-family: "Helvetica Neue", Helvatica, Arial;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: var(--black)
+}
+
+.Header-2,
+.Header-4,
+h3,
+h4 {
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal
+}
+
+.Header-4,
+h4 {
+    font-family: "Uniqlo Pro Regular", "uniqloproregular", "Helvetica Neue", Helvatica, Arial;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: .7px;
+    color: #333
+}
+
+.Body-1-Bold {
+    font-weight: 700
+}
+
+.Body-1-Bold,
+.Body-1-Medium {
+    font-family: "Helvetica Neue", Helvatica, Arial;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: var(--black)
+}
+
+.Body-1-Medium {
+    font-weight: 500
+}
+
+.Body-1-Regular,
+p {
+    font-style: normal
+}
+
+.Body-1-Italic,
+.Body-1-Regular,
+p {
+    font-family: "Helvetica Neue", Helvatica, Arial;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: var(--black)
+}
+
+.Body-1-Italic {
+    font-style: italic
+}
+
+.Body-1-Caption {
+    font-family: "Helvetica Neue", Helvatica, Arial;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black)
+}
+
+.Body-1-Caption,
+.products button {
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal
+}
+
+.products button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: 60px auto 0;
+    background-color: #000;
+    border: 1px solid #000;
+    transition: all .4s;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    color: #000
+}
+
+.products .product-body button {
+    display: block
+}
+
+.products button:hover {
+    color: #000;
+    background-color: #fff
+}
+
+.products button.transp-bg {
+    color: #000;
+    background-color: transparent;
+    transition: all .4s
+}
+
+.products button.transp-bg:hover {
+    color: #fff;
+    background-color: #000
+}
+
+.hero {
+    width: 100%;
+    position: relative
+}
+
+.hero.hero-md {
+    width: 85%;
+    margin: 0 auto
+}
+
+.hero h1 {
+    text-align: center;
+    margin: 35px 0
+}
+
+.menu-item {
+    text-align: center;
+    margin: 10px 20px
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000
+}
+
+.menu-item:hover {
+    opacity: .75
+}
+
+.menu-item .Body-1-Bold {
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.menu-item .Body-1-Regular {
+    margin-top: 0
+}
+
+.video {
+    width: 100%;
+    position: relative;
+    margin: 0 auto 50px
+}
+
+.video video {
+    width: 100%;
+    margin-bottom: 10px
+}
+
+.video.video-sm {
+    width: 75%
+}
+
+.description-container {
+    width: 55%
+}
+
+.description-container.description-type-1 {
+    margin: 20px auto 50px;
+    text-align: center
+}
+
+.description-container.description-type-1 h3,
+.description-container.description-type-1 p {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.description-container.description-type-1 .Body-1-Caption {
+    text-align: center
+}
+
+.description-container.description-type-2 {
+    margin: 20px auto 30px
+}
+
+.description-container.description-type-2 h3 {
+    margin-bottom: 15px;
+    text-align: center
+}
+
+.description-container.description-type-2 p {
+    margin-bottom: 25px
+}
+
+.description-container.description-type-3 {
+    margin: 35px auto
+}
+
+.description-container.description-type-3 h3 {
+    margin-bottom: 25px;
+    text-align: center
+}
+
+.description-container.description-type-3 p {
+    font-size: 22px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px
+}
+
+.description-container.description-type-4 {
+    margin: 10px auto 35px;
+    padding: 10px 40px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+    width: 100%
+}
+
+.description-container.description-type-4 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.description-container.description-type-4 h3 {
+    margin-bottom: 25px;
+    display: block;
+    width: 100%
+}
+
+.description-container.description-type-4 p {
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.divider-container {
+    margin-top: 20px
+}
+
+.divider-container.divider-type-1 h3 {
+    padding: 54px 10px;
+    text-align: center;
+    background-color: #d8d8d8;
+    margin-bottom: 22px
+}
+
+.divider-container.divider-type-1 p {
+    width: 55%;
+    margin: 0 auto 25px;
+    text-align: center
+}
+
+.divider-container.divider-type-2 h3 {
+    padding: 54px 10px;
+    text-align: center;
+    background-color: #d8d8d8;
+    margin-bottom: 22px
+}
+
+.divider-container.divider-type-2 p {
+    width: 55%;
+    margin: 0 auto 25px;
+    text-align: center
+}
+
+.divider-container.divider-type-3 .divider-header {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.divider-container.divider-type-3 .divider-header:before {
+    content: "";
+    border: 1px solid #979797;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0
+}
+
+.divider-container.divider-type-3 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: .5px;
+    text-align: center;
+    color: #3d3d3d;
+    font-family: Uniqlo Pro Regular, uniqloproregular, Helvetica Neue, Helvatica, Arial;
+    font-family: var(--uniqloProReg);
+    position: relative;
+    background-color: #fff;
+    padding: 0 10px
+}
+
+.divider-container.divider-type-3 p {
+    width: 55%;
+    margin: 0 auto 25px;
+    text-align: center
+}
+
+.function-item {
+    width: 25%;
+    margin: 0 auto 40px
+}
+
+.function-item img {
+    width: 80%;
+    margin: 0 auto
+}
+
+.function-item p {
+    text-align: center
+}
+
+.function-item .item-title {
+    margin: 12px 0 10px
+}
+
+.function-container {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.function-container .function-item {
+    margin: 0 0 40px
+}
+
+.products-1,
+.products-2-main,
+.products-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.products-1 .product-body,
+.products-2-main .product-body,
+.products-3 .product-body {
+    width: 50%
+}
+
+.products-2 {
+    width: 100%
+}
+
+.products-2 .Header-2 {
+    margin: 30px 0
+}
+
+.products-3 .product-body .temp-img-container {
+    float: left;
+    margin-right: 20px
+}
+
+.products-4 .Header-2 {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center
+}
+
+.products-4 .product-body .Header-2 {
+    margin-top: 50px
+}
+
+.products-4 .product-body .title-subheading {
+    width: 700px;
+    max-width: none
+}
+
+.product-feature {
+    max-width: 500px;
+    margin: 60px auto
+}
+
+.product-feature .prod-feat-title {
+    margin-bottom: 10px;
+    text-transform: uppercase
+}
+
+.product-carousel {
+    display: flex;
+    justify-content: space-between
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto 30px
+}
+
+.menu-container.menu-container-1 {
+    margin-top: 35px
+}
+
+.menu-container.menu-container-1 .menu-item {
+    max-width: calc(25% - 80px);
+    margin-bottom: 25px
+}
+
+.menu-container.menu-container-1 .menu-item p {
+    margin: 15px 0 5px
+}
+
+.menu-container.menu-container-1 .menu-item .menu-caption {
+    margin: 0
+}
+
+.menu-container.menu-container-2 {
+    margin-top: 35px
+}
+
+.menu-container.menu-container-2 .menu-item {
+    max-width: calc(25% - 80px);
+    margin-bottom: 25px;
+    position: relative
+}
+
+.menu-container.menu-container-2 .menu-item div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .1);
+    color: #fff
+}
+
+.menu-container.menu-container-3 {
+    width: 85%;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 0
+}
+
+.menu-container.menu-container-3 .menu-item {
+    position: relative;
+    margin: 0 20px;
+    padding: 10px 0 5px;
+    transition: .35s
+}
+
+.menu-container.menu-container-3 .menu-item.menu-item-active,
+.menu-container.menu-container-3 .menu-item:hover {
+    border-bottom: 1px solid red
+}
+
+.menu-container.menu-container-4 {
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    position: relative
+}
+
+.menu-container.menu-container-4 .menu-item {
+    position: relative;
+    margin: 0 20px;
+    padding: 10px 0 5px;
+    transition: .35s;
+    border-bottom: 1px solid transparent
+}
+
+.menu-container.menu-container-4 .menu-item.menu-item-active,
+.menu-container.menu-container-4 .menu-item:hover {
+    border-bottom: 1px solid red
+}
+
+.menu-container.menu-container-4 button {
+    position: absolute;
+    right: 30px;
+    background-color: #363636;
+    padding: 8px 20px;
+    font-family: Helvetica Neue, Helvatica, Arial;
+    font-family: var(--helvetica);
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    outline: 0
+}
+
+.custom-slide {
+    padding-top: 50px;
+    width: 200px;
+    transform: translateX(-250px);
+    transition: .3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100vh;
+    overflow: scroll
+}
+
+.custom-slide li {
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .08s
+}
+
+.custom-slide li:hover {
+    color: #fff;
+    background-color: #000
+}
+
+.slide-show {
+    transform: translateX(0)
+}
+
+.page {
+    margin: 0 auto;
+    width: 100%
+}
+
+.page.page-pc {
+    max-width: 1280px
+}
+
+.page.page-tb {
+    max-width: 768px
+}
+
+.page.page-mv {
+    max-width: 375px
+}
+
+.App {
+    background-color: #f1f1f1;
+    min-height: 100vh
+}
+
+.title-subheading {
+    max-width: 500px;
+    margin: auto;
+    text-align: center
+}
+
+.title-subheading .Header-2 {
+    margin-bottom: 30px
+}
+
+.feature-page {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvatica, Arial;
+    font-size: 16px;
+
+    h2 {
+        border: 0 !important;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto
+    }
+}
