@@ -1,6 +1,6 @@
 {
   "name": "generator-uqusdc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scaffold out a front-end web app custom built for UQ projects",
   "license": "BSD-2-Clause",
   "repository": "https://github.com/rayweitzenberg/generator-uqusdc",

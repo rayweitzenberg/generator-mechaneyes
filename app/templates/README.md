@@ -1,7 +1,3 @@
-![Screenshot from Project](screenshot.png)
-
-
-
 # Description
 Describes the project. This is a project featuring a quick brown fox jumping over a lazy dog.
 
